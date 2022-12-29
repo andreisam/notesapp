@@ -36,16 +36,12 @@ function renderNotes() {
 			<li>
 			${myNotes[i]}
 			</li>
-			<button class="delete-btn" onClick="removeItem()">x</button>
+			<button class="delete-btn">x</button>
 		</div>	
 		`;
 	}
 	ulEl.innerHTML = listItems;
 }
 
-
-function removeItem(e) {
-	//var listContainer = document.querySelector(".list-container");
-	//listContainer.remove();
-	myNotes.splice(e);
-}
+// TO DO
+// Fix delete button
